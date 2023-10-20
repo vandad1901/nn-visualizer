@@ -3,17 +3,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "./material-tailwind";
 import { Header } from "./components/Header";
+import clsx from "clsx";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Neural Networks Visualizer",
 };
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <ThemeProvider>
@@ -26,7 +23,7 @@ export default function RootLayout({
                         referrerPolicy="no-referrer"
                     />
                 </head>
-                <body className={inter.className}>
+                <body className={clsx(inter.className, "bg-teal-50")}>
                     <Header />
                     {children}
                 </body>

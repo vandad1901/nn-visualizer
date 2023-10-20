@@ -1,6 +1,5 @@
-import {Button} from "./material-tailwind"
-
+import { NN } from "./components/neuralNetwork";
 
 export default function Home() {
-  return 
+    return <NN />;
 }
