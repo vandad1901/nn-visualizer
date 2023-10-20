@@ -5,6 +5,7 @@ import { ThemeProvider } from "./material-tailwind";
 import { Header } from "./components/Header";
 import clsx from "clsx";
 const inter = Inter({ subsets: ["latin"] });
+import React from "react";
 
 export const metadata: Metadata = {
     title: "Neural Networks Visualizer",

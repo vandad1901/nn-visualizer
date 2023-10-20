@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Navbar, Typography, IconButton, Tooltip } from "../material-tailwind";
 
