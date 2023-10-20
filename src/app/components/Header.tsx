@@ -1,37 +1,26 @@
 "use client";
 import React from "react";
-import {
-    Navbar,
-    Typography,
-    Button,
-    IconButton,
-} from "../material-tailwind";
+import { Navbar, Typography, IconButton, Tooltip } from "../material-tailwind";
 
 export const Header = () => {
-    const [openNav, setOpenNav] = React.useState(false);
-
-    React.useEffect(() => {
-        window.addEventListener(
-            "resize",
-            () => window.innerWidth >= 960 && setOpenNav(false)
-        );
-    }, []);
-
     return (
-        <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
-            <div className="container mx-auto flex items-center justify-between">
-                <Typography
-                    as="a"
-                    href="#"
-                    className="mr-4 cursor-pointer py-1.5 font-medium text-teal-900"
-                >
+        <Navbar className="mx-auto max-w-full py-2 px-4">
+            <div className="container mx-auto lg:px-8 lg:py-4 flex items-center justify-between text-teal-900">
+                <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium text-l lg:text-xl">
                     NN Visualizer
                 </Typography>
-                <a href="https://github.com/vandad1901" rel={"noreferrer"}>
-                     <IconButton variant="outlined" size="sm">
-                        <i className="fab fa-github" />
-                    </IconButton> 
-                </a>
+                <div className="flex gap-5">
+                    <Typography as="a" href="about" className="place-self-end py-1.5">
+                        About Me
+                    </Typography>
+                    <Tooltip content="Source code">
+                        <a href="https://github.com/vandad1901/nn-visualizer" rel={"noreferrer"}>
+                            <IconButton size="md">
+                                <i className="fa-brands fa-github fa-xl"></i>
+                            </IconButton>
+                        </a>
+                    </Tooltip>
+                </div>
             </div>
         </Navbar>
     );
