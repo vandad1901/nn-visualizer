@@ -1,11 +1,13 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { ThemeProvider } from "./material-tailwind";
+
 import { Header } from "./components/Header";
-import clsx from "clsx";
-const inter = Inter({ subsets: ["latin"] });
+import { Inter } from "next/font/google";
+import type { Metadata } from "next";
 import React from "react";
+import { ThemeProvider } from "./material-tailwind";
+import clsx from "clsx";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Neural Networks Visualizer",

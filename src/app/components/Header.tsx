@@ -1,5 +1,6 @@
+import { IconButton, Navbar, Tooltip, Typography } from "../material-tailwind";
+
 import React from "react";
-import { Navbar, Typography, IconButton, Tooltip } from "../material-tailwind";
 
 export const Header = () => {
     return (
