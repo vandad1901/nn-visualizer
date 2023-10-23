@@ -23,12 +23,13 @@ export function NN() {
                         key={`${layerIndex}-${startIndex}-${endIndex}`}
                         start={`${layerIndex}-${startIndex}`}
                         end={`${layerIndex + 1}-${endIndex}`}
-                        path="straight"
+                        path="smooth"
+                        curveness={0.4}
                         strokeWidth={1}
                         color="grey"
                         startAnchor={"right"}
                         endAnchor={"left"}
-                        passProps={{}}></Xarrow>
+                        passProps={{ opacity: 0.3 }}></Xarrow>
                 );
             }
         }
