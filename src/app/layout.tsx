@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         referrerPolicy="no-referrer"
                     />
                 </head>
-                <body className={clsx(inter.className, "bg-teal-50")}>
+                <body className={clsx(inter.className, "bg-primary-50")}>
                     <Header />
                     {children}
                 </body>

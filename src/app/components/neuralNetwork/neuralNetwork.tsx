@@ -36,9 +36,9 @@ export function NN() {
     }
 
     return (
-        <div className={styles["nn-parent"]}>
-            {divElements}
+        <>
+            <div className={styles["nn-parent"]}>{divElements}</div>
             {svgElements}
-        </div>
+        </>
     );
 }

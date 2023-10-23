@@ -5,7 +5,7 @@ import React from "react";
 export const Header = () => {
     return (
         <Navbar className="mx-auto max-w-full py-2 px-4">
-            <div className="container mx-auto lg:px-8 lg:py-4 flex items-center justify-between text-teal-900">
+            <div className="container mx-auto lg:px-8 lg:py-4 flex items-center justify-between text-gray-800">
                 <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium text-l lg:text-xl">
                     NN Visualizer
                 </Typography>
