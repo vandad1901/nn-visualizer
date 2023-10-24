@@ -1,1 +1,1 @@
-export * from "./neuralNetwork.tsx";
+export * from "./neuralNetwork";

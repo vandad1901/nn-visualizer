@@ -1,7 +1,7 @@
 .nn-parent {
-    @apply flex p-20 items-center justify-around;
+    @apply flex p-10 items-center justify-around;
 }
 
 .nn-node {
-    @apply w-10 h-10 bg-white border border-black mx-1 text-center rounded-full;
+    @apply w-5 h-5 bg-white border border-black mx-1 text-center rounded-full;
 }

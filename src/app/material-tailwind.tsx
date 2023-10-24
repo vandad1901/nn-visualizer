@@ -1,5 +1,5 @@
 "use client";
 
-import { Button, IconButton, Navbar, ThemeProvider, Tooltip, Typography } from "@material-tailwind/react";
+import { Button, IconButton, Input, Navbar, ThemeProvider, Tooltip, Typography } from "@material-tailwind/react";
 
-export { Button, IconButton, Navbar, ThemeProvider, Tooltip, Typography };
+export { Button, IconButton, Input, Navbar, ThemeProvider, Tooltip, Typography };
