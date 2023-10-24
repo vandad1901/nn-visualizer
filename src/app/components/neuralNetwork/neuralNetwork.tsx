@@ -10,7 +10,6 @@ export function NN() {
     const [layerCounts, updateLayerCounts] = useImmer([15, 20, 15, 20, 15, 1]);
 
     function updateLayers(layer: number, value: number) {
-        console.log(layer, value);
         updateLayerCounts((draft) => {
             draft[layer] = value;
         });
