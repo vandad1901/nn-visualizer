@@ -3,7 +3,6 @@
 import { Counter } from "../Counter";
 import React from "react";
 import Xarrow from "react-xarrows";
-import styles from "./neuralNetwork.module.css";
 import { useImmer } from "use-immer";
 
 export function NN() {
@@ -17,7 +16,10 @@ export function NN() {
     const divElements = layerCounts.map((count, index) => (
         <div key={index} className="flex flex-col items-center gap-1">
             {Array.from({ length: count }).map((_, i) => (
-                <div key={i} id={`${index}-${i}`} className={styles["nn-node"]}></div>
+                <div
+                    key={i}
+                    id={`${index}-${i}`}
+                    className="w-5 h-5 bg-white border border-black mx-1 text-center rounded-full"></div>
             ))}
             <Counter
                 key="input"
@@ -51,7 +53,7 @@ export function NN() {
 
     return (
         <>
-            <div className={styles["nn-parent"]}>{divElements}</div>
+            <div className="flex p-10 items-center justify-around max-h-screen overflow-hidden">{divElements}</div>
             {svgElements}
         </>
     );
